@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("images/city.png");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    height: 124px;
+    padding-right: 71px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+#logo-box{
+    background-color: white;
+    height: 100%;
+    width: 335px;
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+}
+#nav-box{
+    width: calc(100% - 335px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    float: right;
+    font-family: 'Inter', sans-serif;
+}
+#nav-box img{
+    display: none;
+}
+#nav-box ul li{
+    list-style: none;
+    display: inline-block;
+}
+#nav-box ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#nav-box a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+#main-title-wrapper{
+    width: 100%;
+    padding: 0 120px;
+}
+#title-wrapper{
+    width: 546px;
+}
+#title-wrapper h1{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 124.6%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1200px){
+    nav{
+        padding: 0;
+    }
+    #logo-box{
+        width: 235px;
+    }
+    #nav-box{
+        width: calc(100% - 235px);
+    }
+
+}
+@media screen and (min-width: 1200px){
+    #nav-box{
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width: 768px){
+    nav{
+        height: 80px;
+        margin-bottom: 80px;
+    }
+    #nav-box ul{
+        display: none;
+    }
+    #nav-box{
+        width: calc(100% - 137px);
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    #nav-box img{
+        display: block;
+    }
+    #logo-box{
+        height: 100%;
+        width: 137px;
+    }
+    #logo-box img{
+        width: 100%;
+    }
+    #main-title-wrapper{
+        width: 100%;
+        padding: 0 20px;
+    }
+    #title-wrapper{
+        width: 100%;
+    }
+    #title-wrapper h1{
+        font-size: 50px;
+    }
+}
