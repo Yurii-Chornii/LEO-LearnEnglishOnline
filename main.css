@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+/*header*/
+header {
     background-image: url("images/city.png");
     width: 100vw;
     height: 100vh;
@@ -12,17 +13,17 @@ header{
     background-position: bottom;
     background-size: cover;
     position: relative;
+    color: #FFFFFF;
 }
-nav{
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 0;*/
+
+nav {
     height: 124px;
     padding-right: 71px;
     width: 100%;
     margin-bottom: 100px;
 }
-#logo-box{
+
+#logo-box {
     background-color: white;
     height: 100%;
     width: 335px;
@@ -30,7 +31,8 @@ nav{
     justify-content: flex-end;
     float: left;
 }
-#nav-box{
+
+#nav-box {
     width: calc(100% - 335px);
     display: flex;
     justify-content: center;
@@ -39,88 +41,154 @@ nav{
     float: right;
     font-family: 'Inter', sans-serif;
 }
-#nav-box img{
+
+#nav-box img {
     display: none;
 }
-#nav-box ul li{
+
+#nav-box ul li {
     list-style: none;
     display: inline-block;
 }
-#nav-box ul{
+
+#nav-box ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-#nav-box a{
+
+#nav-box a {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    transition: .2s;
 }
-#main-title-wrapper{
+
+#nav-box a:hover {
+    color: #c6c6c6;
+}
+
+#main-title-wrapper {
     width: 100%;
     padding: 0 120px;
 }
-#title-wrapper{
+
+#title-wrapper {
     width: 546px;
+    font-family: 'Inter', sans-serif;
 }
-#title-wrapper h1{
+
+#title-wrapper p {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+#title-wrapper h1 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
     line-height: 124.6%;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 1200px){
-    nav{
+
+#title-wrapper div {
+    width: 80%;
+    background: #404040;
+    border-radius: 3px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+#title-wrapper div:hover {
+    cursor: pointer;
+    background: #3b3a3a;
+}
+
+#title-wrapper a {
+    text-decoration: none;
+}
+
+/*header*/
+@media screen and (max-width: 1200px) {
+    /*header*/
+    nav {
         padding: 0;
     }
-    #logo-box{
+
+    #logo-box {
         width: 235px;
     }
-    #nav-box{
+
+    #nav-box {
         width: calc(100% - 235px);
     }
 
+    /*header*/
+
 }
-@media screen and (min-width: 1200px){
-    #nav-box{
+
+@media screen and (min-width: 1200px) {
+    /*header*/
+    #nav-box {
         padding-left: 20%;
     }
+
+    /*header*/
+
 }
-@media screen and (max-width: 768px){
-    nav{
+
+@media screen and (max-width: 768px) {
+    /*header*/
+    nav {
         height: 80px;
         margin-bottom: 80px;
     }
-    #nav-box ul{
+
+    #nav-box ul {
         display: none;
     }
-    #nav-box{
+
+    #nav-box {
         width: calc(100% - 137px);
         justify-content: flex-end;
         padding-right: 20px;
     }
-    #nav-box img{
+
+    #nav-box img {
         display: block;
     }
-    #logo-box{
+
+    #logo-box {
         height: 100%;
         width: 137px;
     }
-    #logo-box img{
+
+    #logo-box img {
         width: 100%;
     }
-    #main-title-wrapper{
+
+    #main-title-wrapper {
         width: 100%;
         padding: 0 20px;
     }
-    #title-wrapper{
+
+    #title-wrapper {
         width: 100%;
     }
-    #title-wrapper h1{
+
+    #title-wrapper h1 {
         font-size: 50px;
     }
+
+    #title-wrapper div {
+        width: 100%;
+    }
+
+    /*header*/
+
 }
