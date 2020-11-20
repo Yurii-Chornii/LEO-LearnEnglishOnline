@@ -114,7 +114,7 @@ nav {
     background: #3b3a3a;
 }
 
-#title-wrapper a, #lessonsType-buttonBox a{
+#title-wrapper a, #lessonsType-buttonBox a, #teacherButtonsBox a {
     text-decoration: none;
 }
 
@@ -233,42 +233,50 @@ main {
 #benefits-items img {
     margin-right: 20px;
 }
-#lessonsType{
+
+#lessonsType {
     padding: 0 136px;
     display: flex;
     justify-content: space-around;
     color: #404040;
 }
-.lessonType{
+
+.lessonType {
     padding: 0 20px;
     margin-bottom: 98px;
 }
-.lessonType h3{
+
+.lessonType h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 123.6%;
     margin-bottom: 60px;
     margin-left: 10px;
 }
-.lessonType ul{
+
+.lessonType ul {
     list-style-image: url(images/done.png);
     font-size: 18px;
     line-height: 123.6%;
 }
-.lessonType li{
+
+.lessonType li {
     padding-left: 8px;
     margin-bottom: 20px;
 }
-.lessonType-time{
+
+.lessonType-time {
     font-size: 24px;
     font-weight: bold;
 }
-#lessonsType-buttonBox{
+
+#lessonsType-buttonBox {
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
 }
-#lessonsType-buttonBox div{
+
+#lessonsType-buttonBox div {
     background: #404040;
     border-radius: 3px;
     padding: 30px 75px;
@@ -281,12 +289,92 @@ main {
     font-size: 18px;
     line-height: 22px;
 }
-#lessonsType-buttonBox div:hover{
+
+#lessonsType-buttonBox div:hover {
     background: #3b3a3a;
 }
 
+#howAreTheClasses div img {
+    display: block;
+    width: 100%;
+}
 
+#howAreTheClasses div {
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+}
 
+#howAreTheClasses {
+    margin-bottom: 150px;
+}
+
+#whyUs {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#whyUsPhoneTitle {
+    display: none;
+}
+
+.whyUsBoxes {
+    width: 40%;
+}
+
+#whyUsDesktopTitle {
+    margin-bottom: 30px;
+}
+
+#whyUs-textBox {
+    font-size: 18px;
+    color: #404040;
+}
+
+#theTeacher {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+#teacherTextBox {
+    color: #404040;
+    font-size: 18px;
+    flex-basis: 40%;
+    margin-left: 100px;
+    padding: 50px 0 30px 0;
+}
+
+#boldTeacherText {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+#teacherButtonsBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#teacherButtonsBox a {
+    width: 45%;
+}
+
+#teacherButtonsBox div {
+    width: 100%;
+    background: #404040;
+    border-radius: 3px;
+    padding: 24px 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
 
 
 /*main*/
@@ -322,9 +410,20 @@ main {
     #benefits-weOffer {
         padding: 0 5% 0 0;
     }
-    #lessonsType{
+
+    #lessonsType {
         padding: 0 20px;
     }
+
+    #teacherTextBox {
+        margin-left: 30px;
+        padding: 0;
+    }
+
+    #boldTeacherText {
+        margin-bottom: 10px;
+    }
+
     /*main*/
 
 }
@@ -346,7 +445,7 @@ main {
         margin-bottom: 80px;
     }
 
-    #nav-box ul {
+    #nav-box ul, #boldTeacherText {
         display: none;
     }
 
@@ -365,27 +464,16 @@ main {
         width: 137px;
     }
 
-    #logo-box img {
+    #logo-box img, #title-wrapper, #title-wrapper div, #main-title-wrapper {
         width: 100%;
     }
 
     #main-title-wrapper {
-        width: 100%;
         padding: 0 20px;
     }
-
-    #title-wrapper {
-        width: 100%;
-    }
-
     #title-wrapper h1 {
         font-size: 50px;
     }
-
-    #title-wrapper div {
-        width: 100%;
-    }
-
     /*header*/
     /*main*/
     main {
@@ -444,40 +532,105 @@ main {
         padding: 47px 40px;
         margin-bottom: 60px;
     }
-    #lessonsType{
+
+    #lessonsType {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .lessonType{
+
+    .lessonType {
         margin-bottom: 60px;
     }
-    .lessonType li{
+
+    .lessonType li {
         padding-left: 25px;
     }
-    .lessonType h3{
+
+    .lessonType h3 {
         margin-left: 25px;
         font-size: 18px;
         line-height: 123.6%;
         margin-bottom: 30px;
     }
-    .lessonType ul{
+
+    .lessonType ul {
         font-size: 14px;
         line-height: 123.6%;
     }
-    .lessonType-time{
+
+    .lessonType-time {
         font-size: 14px;
     }
-    #lessonsType-buttonBox{
+
+    #lessonsType-buttonBox {
         margin-bottom: 60px;
     }
-    #lessonsType-buttonBox a{
+
+    #lessonsType-buttonBox a {
         width: 95%;
     }
-    #lessonsType-buttonBox div{
+
+    #lessonsType-buttonBox div {
         padding: 20px 0;
         font-size: 14px;
         line-height: 17px;
     }
+
+    #howAreTheClasses, #whyUsDesktopTitle {
+        display: none;
+    }
+
+    #whyUs {
+        margin-bottom: 80px;
+        flex-direction: column-reverse;
+    }
+
+    #whyUsPhoneTitle {
+        display: block;
+    }
+
+    .whyUsBoxes {
+        width: 100%;
+    }
+
+    #whyUs-videoBox {
+        height: 90vh;
+        margin-bottom: 30px;
+    }
+
+    #whyUs-textBox {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    #theTeacher {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    #teacherImgBox img {
+        width: 100%;
+    }
+
+    #teacherTextBox {
+        font-size: 18px;
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    #teacherButtonsBox {
+        margin-top: 0;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    #teacherButtonsBox a {
+        width: 100%;
+        margin-top: 30px;
+    }
+
     /*main*/
 }
