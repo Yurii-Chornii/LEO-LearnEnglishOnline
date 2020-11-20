@@ -624,7 +624,6 @@ main {
     #teacherButtonsBox {
         margin-top: 0;
         flex-direction: column;
-        margin-bottom: 70px;
     }
 
     #teacherButtonsBox a {
