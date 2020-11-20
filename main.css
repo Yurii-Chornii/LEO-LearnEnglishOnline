@@ -375,6 +375,9 @@ main {
     font-size: 18px;
     line-height: 22px;
 }
+#teacherButtonsBox div:hover{
+    background: #3b3a3a;
+}
 
 
 /*main*/
