@@ -114,7 +114,7 @@ nav {
     background: #3b3a3a;
 }
 
-#title-wrapper a {
+#title-wrapper a, #lessonsType-buttonBox a{
     text-decoration: none;
 }
 
@@ -233,6 +233,61 @@ main {
 #benefits-items img {
     margin-right: 20px;
 }
+#lessonsType{
+    padding: 0 136px;
+    display: flex;
+    justify-content: space-around;
+    color: #404040;
+}
+.lessonType{
+    padding: 0 20px;
+    margin-bottom: 98px;
+}
+.lessonType h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 123.6%;
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+.lessonType ul{
+    list-style-image: url(images/done.png);
+    font-size: 18px;
+    line-height: 123.6%;
+}
+.lessonType li{
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+.lessonType-time{
+    font-size: 24px;
+    font-weight: bold;
+}
+#lessonsType-buttonBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+#lessonsType-buttonBox div{
+    background: #404040;
+    border-radius: 3px;
+    padding: 30px 75px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+#lessonsType-buttonBox div:hover{
+    background: #3b3a3a;
+}
+
+
+
+
 
 /*main*/
 @media screen and (max-width: 1200px) {
@@ -267,7 +322,9 @@ main {
     #benefits-weOffer {
         padding: 0 5% 0 0;
     }
-
+    #lessonsType{
+        padding: 0 20px;
+    }
     /*main*/
 
 }
@@ -387,6 +444,40 @@ main {
         padding: 47px 40px;
         margin-bottom: 60px;
     }
-
+    #lessonsType{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lessonType{
+        margin-bottom: 60px;
+    }
+    .lessonType li{
+        padding-left: 25px;
+    }
+    .lessonType h3{
+        margin-left: 25px;
+        font-size: 18px;
+        line-height: 123.6%;
+        margin-bottom: 30px;
+    }
+    .lessonType ul{
+        font-size: 14px;
+        line-height: 123.6%;
+    }
+    .lessonType-time{
+        font-size: 14px;
+    }
+    #lessonsType-buttonBox{
+        margin-bottom: 60px;
+    }
+    #lessonsType-buttonBox a{
+        width: 95%;
+    }
+    #lessonsType-buttonBox div{
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 17px;
+    }
     /*main*/
 }
