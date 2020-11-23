@@ -1,5 +1,4 @@
-window.onload = function () {
-    //smoothScroll
+ //smoothScroll
     let linkNav = document.querySelectorAll('[href^="#"]'), V = 0.2;
     for (let i = 0; i < linkNav.length; i++) {
         linkNav[i].addEventListener('click', function (e) {
@@ -87,5 +86,4 @@ window.onload = function () {
     document.querySelectorAll('#phoneNav li').forEach(elem => elem.onclick = closeMenu);
     //dropdown menu
 
-}
 
