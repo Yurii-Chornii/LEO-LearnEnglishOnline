@@ -123,8 +123,8 @@ nav {
 /*main*/
 main {
     font-family: 'Inter', sans-serif;
+    margin-bottom: 150px;
 }
-
 #howItWorks {
     margin-top: 150px;
     margin-bottom: 200px;
@@ -378,6 +378,31 @@ main {
 #teacherButtonsBox div:hover{
     background: #3b3a3a;
 }
+.question-box{
+    padding: 0 120px 50px 120px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.question-border{
+    border-bottom: 1px solid #404040;
+}
+.question-box img{
+    margin-right: 32px;
+}
+.question, .answer{
+    display: flex;
+}
+.question{
+    margin-bottom: 30px;
+}
+#questions{
+    transition: 1s;
+}
+#showMoreQuestions{
+    display: none;
+}
+
+
 
 
 /*main*/
@@ -480,7 +505,7 @@ main {
     /*header*/
     /*main*/
     main {
-        font-family: 'Inter', sans-serif;
+        margin-bottom: 45px;
     }
 
     #howItWorks {
@@ -617,7 +642,7 @@ main {
     }
 
     #teacherTextBox {
-        font-size: 18px;
+        font-size: 14px;
         flex-basis: 100%;
         margin-left: 0;
         margin-top: 30px;
@@ -633,6 +658,28 @@ main {
         width: 100%;
         margin-top: 30px;
     }
-
+    .question-box{
+        padding: 0 20px 20px 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .question-box img{
+        margin-right: 15px;
+    }
+    .question{
+        margin-bottom: 15px;
+    }
+    .hiddenQuestion{
+        display: none;
+    }
+    .question-border{
+        border-bottom: none;
+        /*border-bottom: 1px solid #404040;*/
+    }
+    #showMoreQuestions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     /*main*/
 }
