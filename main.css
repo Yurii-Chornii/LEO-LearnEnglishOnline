@@ -1,13 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-
+body {font-family: 'Inter', sans-serif}
 /*header*/
 header {
     background-image: url("images/city.webp");
@@ -19,14 +17,12 @@ header {
     position: relative;
     color: #FFFFFF;
 }
-
 nav {
     height: 124px;
     padding-right: 71px;
     width: 100%;
     margin-bottom: 100px;
 }
-
 #logo-box {
     background-color: white;
     height: 100%;
@@ -35,7 +31,6 @@ nav {
     justify-content: flex-end;
     float: left;
 }
-
 #nav-box {
     width: calc(100% - 335px);
     display: flex;
@@ -43,24 +38,17 @@ nav {
     align-items: center;
     height: 100%;
     float: right;
-    /*font-family: 'Inter', sans-serif;*/
 }
-
-#nav-box img {
-    display: none;
-}
-
+#nav-box img {display: none}
 #nav-box ul li {
     list-style: none;
     display: inline-block;
 }
-
 #nav-box ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
 #nav-box a {
     text-decoration: none;
     font-size: 16px;
@@ -68,26 +56,16 @@ nav {
     color: #FFFFFF;
     transition: .2s;
 }
-
-#nav-box a:hover {
-    color: #c6c6c6;
-}
-
+#nav-box a:hover {color: #c6c6c6}
 #main-title-wrapper {
     width: 100%;
     padding: 0 120px;
 }
-
-#title-wrapper {
-    width: 546px;
-    /*font-family: 'Inter', sans-serif;*/
-}
-
+#title-wrapper {width: 546px}
 #title-wrapper p {
     text-shadow: 0 0 5px rgba(0, 0, 0, 1);
     margin-bottom: 50px;
 }
-
 #title-wrapper h1 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -97,12 +75,10 @@ nav {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 17px;
 }
-
 #title-wrapper h1::selection {
     background: rgba(0, 0, 0, 0);
     color: #c6c6c6;
 }
-
 #title-wrapper div {
     width: 80%;
     background: #404040;
@@ -114,30 +90,19 @@ nav {
     align-items: center;
     transition: .2s;
 }
-
 #title-wrapper div:hover {
     cursor: pointer;
     background: #3b3a3a;
 }
-
-#title-wrapper a, #lessonsType-buttonBox a, #teacherButtonsBox a {
-    text-decoration: none;
-}
-
+#title-wrapper a, #lessonsType-buttonBox a, #teacherButtonsBox a {text-decoration: none}
 /*header*/
-
 /*main*/
-main {
-    /*font-family: 'Inter', sans-serif;*/
-    margin-bottom: 150px;
-}
-
+main {margin-bottom: 150px}
 #howItWorks {
     margin-top: 150px;
     margin-bottom: 200px;
     padding: 0 75px;
 }
-
 .sectionTitles {
     text-align: center;
     font-weight: 500;
@@ -146,14 +111,12 @@ main {
     color: #10197C;
     margin-bottom: 105px;
 }
-
 #howItWorks-boxWrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .howItWorks-box {
     background: #EDF0F3;
     box-shadow: -6px -6px 30px #FFFFFF, 14px 14px 30px #D1D9E6;
@@ -161,7 +124,6 @@ main {
     padding: 35px 45px 24px 45px;
     flex-basis: 30%;
 }
-
 .howItWorks-box h3 {
     font-weight: 600;
     font-size: 18px;
@@ -169,13 +131,11 @@ main {
     color: #404040;
     margin-bottom: 20px;
 }
-
 .howItWorks-box p {
     font-size: 18px;
     line-height: 125.6%;
     color: #404040;
 }
-
 #notJust {
     height: 306px;
     width: 100%;
@@ -185,7 +145,6 @@ main {
     background-size: cover;
     margin-bottom: 200px;
 }
-
 #notJust div {
     width: 100%;
     height: 100%;
@@ -193,7 +152,6 @@ main {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     padding: 40px 119px;
 }
-
 #notJust p {
     width: 60%;
     font-weight: 600;
@@ -202,7 +160,6 @@ main {
     text-align: justify;
     color: #FFFFFF;
 }
-
 #benefits {
     padding: 54px 40px;
     background: #EDF0F3;
@@ -211,48 +168,38 @@ main {
     margin-bottom: 150px;
     display: flex;
 }
-
 #benefits-weOffer {
     flex-basis: 40%;
     padding: 0 5% 0 10%;
 }
-
 #benefits-weOffer p {
     font-weight: bold;
     font-size: 36px;
     line-height: 123.6%;
     color: #404040;
 }
-
 #benefits-items {
     flex-basis: 60%;
     font-size: 24px;
     line-height: 29px;
     color: #404040;
 }
-
 #benefits-items div {
     display: flex;
     align-items: center;
     padding: 15px 0;
 }
-
-#benefits-items img {
-    margin-right: 20px;
-}
-
+#benefits-items img {margin-right: 20px}
 #lessonsType {
     padding: 0 136px;
     display: flex;
     justify-content: space-around;
     color: #404040;
 }
-
 .lessonType {
     padding: 0 20px;
     margin-bottom: 98px;
 }
-
 .lessonType h3 {
     font-weight: bold;
     font-size: 24px;
@@ -260,29 +207,24 @@ main {
     margin-bottom: 60px;
     margin-left: 10px;
 }
-
 .lessonType ul {
     list-style-image: url(images/done.webp);
     font-size: 18px;
     line-height: 123.6%;
 }
-
 .lessonType li {
     padding-left: 8px;
     margin-bottom: 20px;
 }
-
 .lessonType-time {
     font-size: 24px;
     font-weight: bold;
 }
-
 #lessonsType-buttonBox {
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
 }
-
 #lessonsType-buttonBox div {
     background: #404040;
     border-radius: 3px;
@@ -296,55 +238,30 @@ main {
     font-size: 18px;
     line-height: 22px;
 }
-
-#lessonsType-buttonBox div:hover {
-    background: #3b3a3a;
-}
-
-/*#howAreTheClasses div img {*/
-/*    display: block;*/
-/*    width: 100%;*/
-/*}*/
-
+#lessonsType-buttonBox div:hover {background: #3b3a3a}
 #howAreTheClasses div {
     padding: 0 10%;
     display: flex;
     justify-content: center;
     height: 80vh;
 }
-
-#howAreTheClasses {
-    margin-bottom: 150px;
-}
-
+#howAreTheClasses {margin-bottom: 150px}
 #whyUs {
     margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
 }
-
-#whyUsPhoneTitle {
-    display: none;
-}
-
-.whyUsBoxes {
-    width: 40%;
-}
-
-#whyUsDesktopTitle {
-    margin-bottom: 30px;
-}
-
+#whyUsPhoneTitle {display: none}
+.whyUsBoxes {width: 40%}
+#whyUsDesktopTitle {margin-bottom: 30px}
 #whyUs-textBox {
     font-size: 18px;
     color: #404040;
 }
-
 #theTeacher {
     display: flex;
     margin-bottom: 200px;
 }
-
 #teacherTextBox {
     color: #404040;
     font-size: 18px;
@@ -352,23 +269,19 @@ main {
     margin-left: 100px;
     padding: 50px 0 30px 0;
 }
-
 #boldTeacherText {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 35px;
 }
-
 #teacherButtonsBox {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
 }
-
 #teacherButtonsBox a {
     width: 45%;
 }
-
 #teacherButtonsBox div {
     width: 100%;
     background: #404040;
@@ -383,91 +296,52 @@ main {
     font-size: 18px;
     line-height: 22px;
 }
-
-#teacherButtonsBox div:hover {
-    background: #3b3a3a;
-}
-
+#teacherButtonsBox div:hover {background: #3b3a3a}
 .question-box {
     padding: 0 120px 50px 120px;
     font-size: 18px;
     margin-bottom: 40px;
 }
-
-.question-border {
-    border-bottom: 1px solid #404040;
-}
-
-.question-box img {
-    margin-right: 32px;
-}
-
-.question, .answer {
-    display: flex;
-}
-
-.question {
-    margin-bottom: 30px;
-}
-
-#showMoreQuestions {
-    display: none;
-}
-
+.question-border {border-bottom: 1px solid #404040}
+.question-box img {margin-right: 32px}
+.question, .answer {display: flex}
+.question {margin-bottom: 30px}
+#showMoreQuestions {display: none}
 #contacts {
     padding: 0 120px 66px;
     display: flex;
     justify-content: space-between;
-    /*font-family: 'Inter', sans-serif;*/
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
 }
-
 #footerLogoWrapper {
     width: 468px;
     height: 283px;
 }
-
-#footerLogoWrapper img {
-    width: 100%;
-}
-
+#footerLogoWrapper img {width: 100%}
 #footerContactsWrapper {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-
 #footerIconsWrapper {
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 #footerNavWrapper {
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
-
-#footerNavWrapper ul {
-    list-style: none;
-}
-
-#footerNavWrapper li {
-    margin-bottom: 21px;
-}
-
-#footerNavWrapper div {
-    flex-basis: 40%;
-}
-
+#footerNavWrapper ul {list-style: none}
+#footerNavWrapper li {margin-bottom: 21px}
+#footerNavWrapper div {flex-basis: 40%}
 #footerNavWrapper a {
     text-decoration: none;
     color: #10197C;
 }
-
 #blurBackgroundWrapper {
     position: absolute;
     width: 100vw;
@@ -476,11 +350,7 @@ main {
     display: none;
     transition: .5s;
 }
-
-.blurBackground {
-    background: rgba(64, 64, 64, 0.63);
-}
-
+.blurBackground {background: rgba(64, 64, 64, 0.63)}
 #phoneNav {
     transition: 1s;
     position: absolute;
@@ -494,281 +364,163 @@ main {
     border-bottom-right-radius: 3px;
     display: flex;
 }
-
-#phoneNav-logoBox, #phoneNav-logoBox img {
-    width: 100%;
-}
-
+#phoneNav-logoBox, #phoneNav-logoBox img {width: 100%}
 .phoneNav-left-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-.phoneNav-left-box, .phoneNav-right-box {
-    flex-basis: 50%;
-}
-
-.phoneNav-right-box ul {
-    list-style: none;
-}
-
+.phoneNav-left-box, .phoneNav-right-box {flex-basis: 50%}
+.phoneNav-right-box ul {list-style: none}
 .phoneNav-right-box a, .phoneNav-right-box a:visited {
     text-decoration: none;
     color: #404040;
 }
-
-.phoneNav-right-box {
-    /*font-family: 'Inter', sans-serif;*/
-    font-size: 16px;
-}
-
+.phoneNav-right-box {font-size: 16px}
 .phoneNav-right-box li {
     text-align: right;
     margin-bottom: 20px;
 }
-
-
 /*media*/
-
 /*main*/
 @media screen and (max-width: 1200px) {
     /*header*/
-    nav {
-        padding: 0;
-    }
-
-    #logo-box {
-        width: 235px;
-    }
-
-    #nav-box {
-        width: calc(100% - 235px);
-    }
-
+    nav {padding: 0}
+    #logo-box {width: 235px}
+    #nav-box {width: calc(100% - 235px)}
     /*header*/
     /*main*/
-    #howItWorks-boxWrapper {
-        flex-direction: column;
-    }
-
-    .howItWorks-box {
-        margin-bottom: 30px;
-    }
-
+    #howItWorks-boxWrapper {flex-direction: column}
+    .howItWorks-box {margin-bottom: 30px}
     #notJust p {
         width: 100%;
         text-align: center;
     }
-
-    #benefits-weOffer {
-        padding: 0 5% 0 0;
-    }
-
-    #lessonsType {
-        padding: 0 20px;
-    }
-
+    #benefits-weOffer {padding: 0 5% 0 0}
+    #lessonsType {padding: 0 20px}
     #teacherTextBox {
         margin-left: 30px;
         padding: 0;
     }
-
-    #boldTeacherText {
-        margin-bottom: 10px;
-    }
-
+    #boldTeacherText {margin-bottom: 10px}
     /*main*/
-
 }
-
 @media screen and (min-width: 1200px) {
     /*header*/
-    #nav-box {
-        padding-left: 20%;
-    }
-
+    #nav-box {padding-left: 20%}
     /*header*/
-
 }
-
 @media screen and (max-width: 768px) {
     /*header*/
     nav {
         height: 80px;
         margin-bottom: 80px;
     }
-
-    #nav-box ul, #boldTeacherText, #howAreTheClasses, #whyUsDesktopTitle, .hiddenQuestion, #footerNavWrapper {
-        display: none;
-    }
-
+    #nav-box ul, #boldTeacherText, #howAreTheClasses, #whyUsDesktopTitle, .hiddenQuestion, #footerNavWrapper {display: none}
     #nav-box {
         width: calc(100% - 137px);
         justify-content: flex-end;
         padding-right: 20px;
     }
-
-    #nav-box img {
-        display: block;
-    }
-
+    #nav-box img {display: block}
     #logo-box {
         height: 100%;
         width: 137px;
     }
-
-    #logo-box img, #title-wrapper, #title-wrapper div, #main-title-wrapper {
-        width: 100%;
-    }
-
-    #main-title-wrapper {
-        padding: 0 20px;
-    }
-
-    #title-wrapper h1 {
-        font-size: 50px;
-    }
-
-    #title-wrapper p {
-        margin-bottom: 20px;
-    }
-
+    #logo-box img, #title-wrapper, #title-wrapper div, #main-title-wrapper {width: 100%}
+    #main-title-wrapper {padding: 0 20px}
+    #title-wrapper h1 {font-size: 50px}
+    #title-wrapper p {margin-bottom: 20px}
     /*header*/
     /*main*/
-    main {
-        margin-bottom: 45px;
-    }
-
+    main {margin-bottom: 45px}
     #howItWorks {
         margin-top: 60px;
         margin-bottom: 30px;
         padding: 0;
     }
-
     .sectionTitles {
         font-size: 30px;
         margin-bottom: 30px;
     }
-
     .howItWorks-box h3 {
         font-size: 16px;
         line-height: 19px;
     }
-
     .howItWorks-box p {
         font-size: 16px;
         line-height: 125.6%;
     }
-
     #notJust {
         height: 174px;
         margin-bottom: 60px;
     }
-
     #notJust div {
         padding: 16px 20px 0 20px;
         overflow: scroll;
     }
-
     #notJust p {
         width: 100%;
         font-size: 16px;
         line-height: 19px;
     }
-
     #benefits-weOffer {
         display: none;
         padding: 0 5% 0 0;
     }
-
     #benefits-items {
         flex-basis: 100%;
         font-size: 14px;
         line-height: 17px;
     }
-
     #benefits {
         padding: 47px 40px;
         margin-bottom: 60px;
     }
-
     #lessonsType {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .lessonType {
-        margin-bottom: 60px;
-    }
-
-    .lessonType li {
-        padding-left: 25px;
-    }
-
+    .lessonType {margin-bottom: 60px}
+    .lessonType li {padding-left: 25px}
     .lessonType h3 {
         margin-left: 25px;
         font-size: 18px;
         line-height: 123.6%;
         margin-bottom: 30px;
     }
-
     .lessonType ul {
         font-size: 14px;
         line-height: 123.6%;
     }
-
-    .lessonType-time {
-        font-size: 14px;
-    }
-
-    #lessonsType-buttonBox {
-        margin-bottom: 60px;
-    }
-
-    #lessonsType-buttonBox a {
-        width: 95%;
-    }
-
+    .lessonType-time {font-size: 14px}
+    #lessonsType-buttonBox {margin-bottom: 60px}
+    #lessonsType-buttonBox a {width: 95%}
     #lessonsType-buttonBox div {
         padding: 20px 0;
         font-size: 14px;
         line-height: 17px;
     }
-
     #whyUs {
         margin-bottom: 80px;
         flex-direction: column-reverse;
     }
-
-    #whyUsPhoneTitle {
-        display: block;
-    }
-
-    .whyUsBoxes {
-        width: 100%;
-    }
-
+    #whyUsPhoneTitle {display: block}
+    .whyUsBoxes {width: 100%}
     #whyUs-videoBox {
         height: 90vh;
         margin-bottom: 30px;
     }
-
     #whyUs-textBox {
         padding: 0 20px;
         font-size: 14px;
     }
-
     #theTeacher {
         flex-direction: column;
         margin-bottom: 70px;
     }
-
-    #teacherImgBox img {
-        width: 100%;
-    }
-
+    #teacherImgBox img {width: 100%}
     #teacherTextBox {
         font-size: 14px;
         flex-basis: 100%;
@@ -776,59 +528,41 @@ main {
         margin-top: 30px;
         padding: 0 20px;
     }
-
     #teacherButtonsBox {
         margin-top: 0;
         flex-direction: column;
     }
-
     #teacherButtonsBox a {
         width: 100%;
         margin-top: 30px;
     }
-
     .question-box {
         padding: 0 20px 20px 20px;
         font-size: 14px;
         margin-bottom: 20px;
     }
-
-    .question-box img {
-        margin-right: 15px;
-    }
-
-    .question {
-        margin-bottom: 15px;
-    }
-
+    .question-box img {margin-right: 15px}
+    .question {margin-bottom: 15px}
     .question-border {
         border-bottom: none;
     }
-
     #showMoreQuestions {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     #showMoreQuestionsBtn {
         padding: 5px 15px;
         transition: .6s;
     }
-
     #contacts {
         padding: 0 16px 28px;
         flex-direction: column;
     }
-
     #footerLogoWrapper {
         height: auto;
         margin-bottom: 30px;
     }
-
-    #footerContactsWrapper, #footerLogoWrapper {
-        width: 100%;
-    }
-
+    #footerContactsWrapper, #footerLogoWrapper {width: 100%}
     /*main*/
 }

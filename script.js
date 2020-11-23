@@ -1,11 +1,13 @@
 //youtube
  window.onload = () => {
-    document.querySelector('#whyUs-videoBox').innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/a9cSMaGJ5MM" frameborder="0"
+    setTimeout(() => {
+        document.querySelector('#whyUs-videoBox').innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/a9cSMaGJ5MM" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>`;
-     document.querySelector('#howAreTheClasses div').innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/G4hbyoojIrM" frameborder="0"
+        document.querySelector('#howAreTheClasses div').innerHTML = `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/G4hbyoojIrM" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>`;
+    }, 0)
  }
 
  //smoothScroll
