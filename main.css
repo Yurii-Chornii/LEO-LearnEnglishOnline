@@ -125,6 +125,7 @@ main {
     font-family: 'Inter', sans-serif;
     margin-bottom: 150px;
 }
+
 #howItWorks {
     margin-top: 150px;
     margin-bottom: 200px;
@@ -375,35 +376,153 @@ main {
     font-size: 18px;
     line-height: 22px;
 }
-#teacherButtonsBox div:hover{
+
+#teacherButtonsBox div:hover {
     background: #3b3a3a;
 }
-.question-box{
+
+.question-box {
     padding: 0 120px 50px 120px;
     font-size: 18px;
     margin-bottom: 40px;
 }
-.question-border{
+
+.question-border {
     border-bottom: 1px solid #404040;
 }
-.question-box img{
+
+.question-box img {
     margin-right: 32px;
 }
-.question, .answer{
+
+.question, .answer {
     display: flex;
 }
-.question{
+
+.question {
     margin-bottom: 30px;
 }
-#questions{
-    transition: 1s;
-}
-#showMoreQuestions{
+
+#showMoreQuestions {
     display: none;
 }
 
+#contacts {
+    padding: 0 120px 66px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#footerLogoWrapper {
+    width: 468px;
+    height: 283px;
+}
+
+#footerLogoWrapper img {
+    width: 100%;
+}
+
+#footerContactsWrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footerIconsWrapper {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerNavWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#footerNavWrapper ul {
+    list-style: none;
+}
+
+#footerNavWrapper li {
+    margin-bottom: 21px;
+}
+
+#footerNavWrapper div {
+    flex-basis: 40%;
+}
+
+#footerNavWrapper a {
+    text-decoration: none;
+    color: #10197C;
+}
+
+#blurBackgroundWrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 19;
+    display: none;
+    transition: .5s;
+}
+
+.blurBackground {
+    background: rgba(64, 64, 64, 0.63);
+}
+
+#phoneNav {
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: -500px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    z-index: 20;
+    padding: 30px 20px 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+}
+
+#phoneNav-logoBox, #phoneNav-logoBox img {
+    width: 100%;
+}
+
+.phoneNav-left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phoneNav-left-box, .phoneNav-right-box {
+    flex-basis: 50%;
+}
+
+.phoneNav-right-box ul {
+    list-style: none;
+}
+
+.phoneNav-right-box a, .phoneNav-right-box a:visited {
+    text-decoration: none;
+    color: #404040;
+}
+
+.phoneNav-right-box {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.phoneNav-right-box li {
+    text-align: right;
+    margin-bottom: 20px;
+}
 
 
+/*media*/
 
 /*main*/
 @media screen and (max-width: 1200px) {
@@ -473,7 +592,7 @@ main {
         margin-bottom: 80px;
     }
 
-    #nav-box ul, #boldTeacherText {
+    #nav-box ul, #boldTeacherText, #howAreTheClasses, #whyUsDesktopTitle, .hiddenQuestion, #footerNavWrapper {
         display: none;
     }
 
@@ -499,9 +618,11 @@ main {
     #main-title-wrapper {
         padding: 0 20px;
     }
+
     #title-wrapper h1 {
         font-size: 50px;
     }
+
     /*header*/
     /*main*/
     main {
@@ -605,10 +726,6 @@ main {
         line-height: 17px;
     }
 
-    #howAreTheClasses, #whyUsDesktopTitle {
-        display: none;
-    }
-
     #whyUs {
         margin-bottom: 80px;
         flex-direction: column-reverse;
@@ -658,28 +775,49 @@ main {
         width: 100%;
         margin-top: 30px;
     }
-    .question-box{
+
+    .question-box {
         padding: 0 20px 20px 20px;
         font-size: 14px;
         margin-bottom: 20px;
     }
-    .question-box img{
+
+    .question-box img {
         margin-right: 15px;
     }
-    .question{
+
+    .question {
         margin-bottom: 15px;
     }
-    .hiddenQuestion{
-        display: none;
-    }
-    .question-border{
+
+    .question-border {
         border-bottom: none;
-        /*border-bottom: 1px solid #404040;*/
     }
-    #showMoreQuestions{
+
+    #showMoreQuestions {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    #showMoreQuestionsBtn {
+        padding: 5px 15px;
+        transition: .6s;
+    }
+
+    #contacts {
+        padding: 0 16px 28px;
+        flex-direction: column;
+    }
+
+    #footerLogoWrapper {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    #footerContactsWrapper, #footerLogoWrapper {
+        width: 100%;
+    }
+
     /*main*/
 }

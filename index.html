@@ -19,10 +19,27 @@
 
 </head>
 <body>
+<div id="blurBackgroundWrapper">
+    <div id="phoneNav">
+        <div class="phoneNav-left-box">
+            <div id="closeBtn"><img src="images/close_big.png" alt="close"></div>
+            <div id="phoneNav-logoBox"><img src="images/leo-logo.png" alt="LEO logo"></div>
+        </div>
+        <div class="phoneNav-right-box">
+            <ul>
+                <li><a href="#howItWorks">Як це працює</a></li>
+                <li><a href="#onlineLessons">Онлайн заняття</a></li>
+                <li><a href="#theTeacher">Викладач</a></li>
+                <li><a href="#questions">Найчастіші запитання</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <header>
     <nav>
-        <div id="logo-box"><img src="images/leo-logo.png" alt="LEO logo"></div>
+        <div id="logo-box"><a href=""><img src="images/leo-logo.png" alt="LEO logo"></a></div>
         <div id="nav-box">
             <ul>
                 <li><a href="#howItWorks">Як це працює</a></li>
@@ -31,7 +48,7 @@
                 <li><a href="#questions">Найчастіші запитання</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
-            <img src="images/menu_alt_01.png" alt="menu button">
+            <img src="images/menu_alt_01.png" id="openMenuBtn" alt="menu button">
         </div>
     </nav>
     <div id="main-title-wrapper">
@@ -269,14 +286,40 @@
             </div>
         </div>
         <div id="showMoreQuestions">
-            <img src="images/chevron-up.png" alt="more questions">
+            <img src="images/chevron-up.png" id="showMoreQuestionsBtn" alt="more questions">
         </div>
-
     </section>
 </main>
 
 <footer id="contacts">
-
+    <div id="footerLogoWrapper">
+        <img src="images/unnamed.png" alt="LEO Logo">
+    </div>
+    <div id="footerContactsWrapper">
+        <nav id="footerNavWrapper">
+            <div>
+                <ul>
+                    <li><a href="#howItWorks">Як це працює</a></li>
+                    <li><a href="#onlineLessons">Онлайн заняття</a></li>
+                    <li><a href="#theTeacher">Викладач</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#questions">Найчастіші запитання</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="footerIconsWrapper">
+            <div><a href="https://www.facebook.com/Leo-Learn-English-Online-104034071517234/"><img
+                    src="images/Facebook.png" alt="Facebook icon"></a></div>
+            <div><a href="https://www.instagram.com/leo.english.online/"><img src="images/instagram.png"
+                                                                              alt=" icon"></a></div>
+            <div><a href="https://www.skype.com/"><img src="images/skype.png" alt="skype icon"></a></div>
+            <div><a href="https://zoom.us/download"><img src="images/zoom.png" alt="ZOOM icon"></a></div>
+        </div>
+    </div>
 </footer>
 
 <script src="script.js"></script>
